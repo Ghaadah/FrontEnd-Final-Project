@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import "./style.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,15 +10,13 @@ import Dashboard from "./pages/Dashboard";
 import SearchPage from "./pages/SearchPage";
 import GraphPage from "./pages/GraphPage";
 import CollegePage from "./pages/CollegePage";
+import GraphPage from "./pages/GraphPage";
 
 function App() {
   return (
-    // eslint-disable-next-line react/jsx-filename-extension
     <Router>
       <NavMenu />
-
       <Routes>
-        {" "}
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/search" element={<SearchPage title="Search Page" />} />

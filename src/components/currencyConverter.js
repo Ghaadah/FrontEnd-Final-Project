@@ -1,8 +1,10 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/jsx-filename-extension */
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Currencies from "../components/currencyList"; // currency list
-
+const apiKeyRu = process.env.REACT_APP_API_KEY_RU;
 function CurrencyConverter() {
   const location = useLocation();
   const school = location.state && location.state.school; // Safely extract school data
@@ -91,7 +93,7 @@ export default CurrencyConverter;
 // import { useLocation } from "react-router-dom";
 
 // function Russ() {
-//   const location = useLocation(); 
+//   const location = useLocation();
 //   const school = location.state?.school;
 
 //   return (

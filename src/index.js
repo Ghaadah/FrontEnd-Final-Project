@@ -1,8 +1,8 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable react/jsx-filename-extension */
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-
-import App from "./App";
+import App from "./App"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./output.css";
 
