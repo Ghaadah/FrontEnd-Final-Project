@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import SearchPage from "./pages/SearchPage";
 import GraphPage from "./pages/GraphPage";
 import CollegePage from "./pages/CollegePage";
+import GraphPage from "./pages/GraphPage";
 
 function App() {
   return (
