@@ -22,8 +22,11 @@ function App() {
         <Route path="/searchByState" element={<APIData />} />
         <Route path="/graphPage" element={<GraphPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
+<<<<<<< HEAD
         <Route path="/college/:name" element={<CollegePage />} />
         <Route path="/college/:id/:name" element={<CollegePage />} />
+=======
+>>>>>>> a55aeaf (update)
         <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>
     </Router>
