@@ -28,7 +28,6 @@ function NavMenu() {
             </Nav.Link>
             <Nav.Link as={Link} to="/Raghad" className="text-light">
               Top U.S. Schools
-              Top U.S. Schools
             </Nav.Link>
             <Nav.Link as={Link} to="/search" className="text-light">
               Search by Name
