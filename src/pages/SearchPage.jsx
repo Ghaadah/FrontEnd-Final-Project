@@ -1,16 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import {
-  Card,
-  Button,
-  Row,
-  Col,
-  Pagination,
-  Form,
-  InputGroup,
-  Container,
-} from "react-bootstrap";
-import { FaSearch } from "react-icons/fa";
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/button-has-type */
+/* eslint-disable no-nested-ternary */
+import React, { useState } from "react";
 import useApiData from "../hooks/useApiData";
 import buildSearchByNameUrl from "../utils/buildUrl";
 
