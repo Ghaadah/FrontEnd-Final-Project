@@ -17,7 +17,7 @@ function NavMenu() {
             height="30"
             className="d-inline-block align-top "
           />
-          <span className="text-light">eduExp</span>
+          <span className="text-warning">eduExp</span>
           <h6 className="text-secondary">Education Expenses</h6>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav " />
@@ -27,6 +27,7 @@ function NavMenu() {
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/searchByState" className="text-light">
+              Top U.S. Schools
               Top U.S. Schools
             </Nav.Link>
             <Nav.Link as={Link} to="/search" className="text-light">
