@@ -213,7 +213,7 @@ function APIData() {
   const [selectedState, setSelectedState] = useState("OR"); // State for the selected state
   const [url, setUrl] = useState(""); // API URL
   const { data: result, isLoaded, isError } = useApiData(url);
-  console.log(result);
+  // console.log(result);
   
   const navigate = useNavigate();
 
