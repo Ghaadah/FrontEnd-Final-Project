@@ -6,8 +6,8 @@
   "private": true,
   "dependencies": {
     "@popperjs/core": "2.11.8",
-    "@testing-library/react-hooks": "^8.0.1",
-    "axios": "0.16.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "axios-mock-adapter": "^2.1.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "chart.js": "4.4.6",
@@ -18,14 +18,10 @@
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "18.3.1",
     "react-icons": "^5.4.0",
-<<<<<<< HEAD
-    "react-router-dom": "6.28.0"
-  },
-=======
     "react-router-dom": "6.28.0",
+    "axios": "^1.7.8",
     "undefined": "0.1.0"
   },    
->>>>>>> 450698d (added deploy scripts)
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
