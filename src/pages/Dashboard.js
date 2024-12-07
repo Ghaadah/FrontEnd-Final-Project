@@ -7,9 +7,13 @@
 /* eslint-disable react/function-component-definition */
 import "chart.js/auto";
 import React, { useState } from "react";
+import React, { useState } from "react";
 import { Row, Card, Col } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { Bar } from "react-chartjs-2";
+import getCurrencySymbol from "../utils/currencySymbol";
+import CurrencyConverter from "../components/currencyConverterSmall";
+import getCurrencyName from "../utils/currencyName";
 import getCurrencySymbol from "../utils/currencySymbol";
 import CurrencyConverter from "../components/currencyConverterSmall";
 import getCurrencyName from "../utils/currencyName";
