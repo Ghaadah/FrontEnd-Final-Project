@@ -22,7 +22,7 @@ function App() {
         <Route path="/searchPage" element={<SearchPage />} />
         <Route path="/raghad" element={<Raghad />} />
         <Route path="/graphPage" element={<GraphPage />} />
-        <Route path="/russ" element={<Russ title="Russ Page" />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<div>404: Page Not Found</div>} />
       </Routes>
     </Router>
