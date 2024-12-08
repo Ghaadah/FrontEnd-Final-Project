@@ -1,5 +1,6 @@
-/* eslint-disable react/jsx-filename-extension */
 import React from "react";
+import { Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
