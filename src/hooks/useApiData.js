@@ -25,7 +25,7 @@ const useApiData = (url) => {
     };
 
     fetchData(); // Trigger the data fetching process
-  }, [url]); // Only re-run when the `url` changes
+  }, [url]); // Only retrun when the `url` changes
 
   return { data, isLoaded, error };
 };
