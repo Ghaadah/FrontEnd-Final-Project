@@ -9,7 +9,6 @@ import {
   Form,
   InputGroup,
   Container,
-  Spinner,
 } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import useApiData from "../hooks/useApiData";
