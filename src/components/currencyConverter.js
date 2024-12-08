@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Currencies from "../components/currencyList"; // currency list
-
+const apiKeyRu = process.env.REACT_APP_API_KEY_RU;
 function CurrencyConverter() {
   const location = useLocation();
   const school = location.state && location.state.school; // Safely extract school data
@@ -13,7 +13,6 @@ function CurrencyConverter() {
   const [conversionRate, setConversionRate] = useState(null);
   const [loading, setLoading] = useState(false);
   const basePrice = 1.0;
-  const apiKeyRu = process.env.REACT_APP_API_KEY_RU;
 
   useEffect(() => {
     const fetchExchangeRate = async () => {
@@ -44,7 +43,7 @@ function CurrencyConverter() {
         setLoading(false);
       }
     };
-    if (selectedCurrency) {gi
+    if (selectedCurrency) {
       fetchExchangeRate();
     }
   }, [selectedCurrency]); // Re-fetch data when the selected currency changes
@@ -89,13 +88,12 @@ function CurrencyConverter() {
     </>
   );
 }
-
 export default CurrencyConverter;
 
 // import { useLocation } from "react-router-dom";
 
 // function Russ() {
-//   const location = useLocation(); 
+//   const location = useLocation();
 //   const school = location.state?.school;
 
 //   return (

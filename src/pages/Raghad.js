@@ -1,3 +1,4 @@
+
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect } from "react";
 import {
@@ -20,6 +21,7 @@ function APIData() {
   const [selectedState, setSelectedState] = useState("OR"); // Default to Oregon
   const [url, setUrl] = useState("");
   const { data: result, isLoaded, isError } = useApiData(url);
+  console.log(result);
 
   const navigate = useNavigate();
 
@@ -41,13 +43,13 @@ function APIData() {
   };
 
   const handleCostDetailsClick = (item) => {
-    navigate("/Dashboard", { state: { school: item } });
+    navigate("/dashboard", { state: { school: item } });
   };
 
   return (
     <main className="bg-light">
       <Container fluid className="py-5">
-        <h2 className="text-center mb-4">
+        <h2 className="text-center mb-4 " style={{ fontSize: "2rem" }}>
           Explore the Largest Schools in the USA
         </h2>
         <p className="text-center text-muted mb-5">
