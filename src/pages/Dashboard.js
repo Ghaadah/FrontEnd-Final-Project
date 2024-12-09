@@ -7,9 +7,8 @@
 /* eslint-disable react/function-component-definition */
 import "chart.js/auto";
 import React, { useState } from "react";
-import React, { useState } from "react";
-import { Row, Card, Col } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
+import { Row, Card, Col, Button } from "react-bootstrap";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Bar } from "react-chartjs-2";
 import getCurrencySymbol from "../utils/currencySymbol";
 import CurrencyConverter from "../components/currencyConverterSmall";
@@ -20,6 +19,7 @@ import getCurrencyName from "../utils/currencyName";
 
 const Dashboard = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const schoolData = location.state && location.state.school; // Safely extract school data
   const [conversionRates, setConversionRates] = useState({});
   const [currencySymbol, setCurrencySymbol] = useState(
@@ -127,6 +127,17 @@ const Dashboard = () => {
           {" "}
           {schoolData.school.name}{" "}
         </h2>
+        <Button
+          variant="secondary"
+          className="shadow-sm border-2 border-warning"
+          onClick={() => navigate("/searchByState")}
+          style={{
+            width: "300px",
+            borderRadius: "30px",
+          }}
+        >
+          Go Back to Search
+        </Button>
         {schoolData.school.alias && (
           <h3 style={{ fontSize: "32px" }}>
             {schoolData.school.alias || "No alias available"} -{" "}
