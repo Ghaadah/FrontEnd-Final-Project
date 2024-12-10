@@ -11,6 +11,7 @@ import {
   InputGroup,
   Container,
   Spinner,
+  CardBody,
 } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import useApiData from "../hooks/useApiData";
@@ -109,14 +110,24 @@ function SearchPage() {
             return (
               <Col key={id}>
                 <Card className="h-100">
-                  <Card.Body className="d-flex flex-column justify-content-between">
+                  <Card.Header
+                    className="text-center py-3"
+                    style={{
+                      borderTopLeftRadius: "15px",
+                      borderTopRightRadius: "15px",
+                      backgroundColor: "#F4F6F8",
+                      color: "#212529",
+                    }}
+                  >
                     <a
                       href={`/college/${id}/${name.toLowerCase()}`}
                       className="card-title text-decoration-none fw-bold mt-5"
                     >
                       {name}
                     </a>
-                    <Card.Subtitle className="mb-5 text-muted">
+                  </Card.Header>
+                  <Card.Body className="d-flex flex-column">
+                    <Card.Subtitle className=" h-20 mb-5 text-muted">
                       {city}, {state}
                     </Card.Subtitle>
                     <div className="flex-grow-1" />{" "}
