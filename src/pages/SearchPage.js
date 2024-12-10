@@ -9,6 +9,7 @@ import {
   Form,
   InputGroup,
   Container,
+  Spinner,
 } from "react-bootstrap";
 import { FaSearch } from "react-icons/fa";
 import useApiData from "../hooks/useApiData";
@@ -119,14 +120,14 @@ function SearchPage() {
                     </Card.Subtitle>
                     <div className="flex-grow-1" />{" "}
                     <Button
-                      variant="dark"
-                      className="px-5 py-2 bg-secondary  border-3 border-warning shadow-sm"
-                       onClick={() => navigate(`/college/${id}/${name.toLowerCase()}`)
-                      }
+                      className="py-2 bg-secondary  border-3 border-warning shadow-sm"
                       style={{
-                        width: "300px",
                         borderRadius: "30px",
-                     }} 
+                      }}
+                      variant="dark"
+                      onClick={() =>
+                        navigate(`/college/${id}/${name.toLowerCase()}`)
+                      }
                     >
                       View College
                     </Button>
@@ -181,8 +182,16 @@ function SearchPage() {
                 onChange={handleInputChange}
               />
             </InputGroup>
-            <div className="d-grid">
-              <Button variant="primary" type="submit">
+            <div>
+              <Button
+                variant="dark"
+                type="submit"
+                className="px-5 py-2 bg-secondary  border-3 border-warning shadow-sm"
+                style={{
+                  width: "400px",
+                  borderRadius: "30px",
+                }}
+              >
                 Search
               </Button>
             </div>
