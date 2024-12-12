@@ -1,4 +1,3 @@
-
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState, useEffect } from "react";
 import {
@@ -196,8 +195,4 @@ function APIData() {
     </main>
   );
 }
-
-<<<<<<< HEAD
-export default APIData;
-=======
 export default APIData;

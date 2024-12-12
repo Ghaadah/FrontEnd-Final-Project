@@ -10,23 +10,19 @@
 
   "rules": {
     "jsx-a11y/label-has-for": [
-      2,
+      "error",
       {
         "components": ["Label"],
         "required": {
           "some": ["nesting", "id"],
         },
         "allowChildren": false,
-        "react/jsx-filename-extension": [
-          "error",
-          { "extensions": [".js", ".jsx"] },
-        ],
       },
     ],
     "react/jsx-filename-extension": [
-      1,
+      "warn",
       {
-        "ignoreFilesWithoutCode": true,
+        "extensions": [".js", ".jsx"],
       },
     ],
   },

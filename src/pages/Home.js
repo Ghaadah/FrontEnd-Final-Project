@@ -28,7 +28,7 @@ function Home() {
           </Button>
         </Link>
       </div>
-    </div>
+    </Container>
   );
 }
 
