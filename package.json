@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/ruspedpdx/Final-Project-CS564",
+  "homepage": "https://github.com/ghaadah/Final-Project-CS564",
   "name": "react",
   "version": "0.0.0",
   "private": true,
@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "jest",
+    "test": "react-scripts test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
