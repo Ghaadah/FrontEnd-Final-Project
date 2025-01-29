@@ -139,6 +139,7 @@ function SearchPage() {
                       variant="dark"
                       onClick={() =>
                         navigate(`/college/${id}/${name.toLowerCase()}`)
+                       
                       }
                     >
                       View College

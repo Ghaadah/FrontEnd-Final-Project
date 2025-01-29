@@ -16,7 +16,6 @@ function App() {
     <Router>
       <NavMenu />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/searchByState" element={<APIData />} />
