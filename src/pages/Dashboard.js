@@ -12,7 +12,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Bar } from "react-chartjs-2";
 import getCurrencySymbol from "../utils/currencySymbol";
 import CurrencyConverter from "../components/currencyConverterSmall";
-import getCurrencyName from "../Utils/currencyName";
+import getCurrencyName from "../utils/currencyName";
 
 const Dashboard = () => {
   const location = useLocation();
