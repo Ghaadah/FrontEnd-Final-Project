@@ -8,6 +8,6 @@ You can use the Search by School search to search for the schools with the large
 
 ## Happy hunting!
 
-https://ghaadah.github.io/Final-Project-CS564/
+https://ghaadah.github.io/FrontEnd-Final-Project/
 
 
