@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/ghaadah/Final-Project-CS564",
-  "name": "react",
+  "name": "eduexp",
+  "homepage": "https://ghaadah.github.io/EduExp",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
